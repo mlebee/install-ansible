@@ -1,6 +1,6 @@
 # Install Ansible
 
-This script is meant for quick & easy setup Ansible and its requirements below:
+This script is meant for quick & easy setup Ansible and its requirements below on **Ubuntu Xenial** (or later):
 - apt packages:
 ```
   redis-server

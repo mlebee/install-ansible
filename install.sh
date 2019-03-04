@@ -15,6 +15,19 @@ set -e
 # check if user is ROOT
 [ "$USER" = "root" ] || { echo "You must be ROOT!"; exit 1; }
 
+# Ensure os is ubuntu xenial or later
+source /etc/os-release || { echo "OS cannot be determined!"; exit 1; }
+if [[ "${ID}" != "ubuntu" ]]
+  then
+    echo "Only Ubuntu is supported!"
+    exit 1
+fi
+if [[ ${VERSION_ID%.*} -lt 16 ]]
+  then
+    echo "Ubuntu prior to xenial is not supported!"
+    exit 1
+fi
+
 # main
 install_ansible() {
   apt install -q -y software-properties-common
