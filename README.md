@@ -12,7 +12,7 @@ This script is meant for quick & easy setup Ansible and its requirements below o
 - pip packages:
 ```
   dnspython
-  docker-py
+  docker
   pyvmomi
   redis
 ```
