@@ -44,7 +44,7 @@ install_ansible() {
       apt install -qq -y -o "Dpkg::Options::=--force-confdef" -o "Dpkg::Options::=--force-confold" --allow-downgrades ansible=${PKG_VERSION}
   fi
   apt install -qq -y -o "Dpkg::Options::=--force-confdef" -o "Dpkg::Options::=--force-confold" redis-server python-mysqldb python-apt python-netaddr
-  pip install -q dnspython docker pyvmomi redis
+  pip install -q dnspython docker openstacksdk pyvmomi redis
   ansible --version
 }
 

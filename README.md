@@ -13,6 +13,7 @@ This script is meant for quick & easy setup Ansible and its requirements below o
 ```
   dnspython
   docker
+  openstacksdk
   pyvmomi
   redis
 ```
